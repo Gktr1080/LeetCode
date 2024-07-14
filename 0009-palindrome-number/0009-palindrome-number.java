@@ -9,7 +9,8 @@ class Solution {
     int reversed = 0;
 
     while (x > 0) {
-      reversed = reversed * 10 + x % 10;
+        int lastdigit = x % 10;
+      reversed = reversed * 10 + lastdigit;
       x /= 10;
     }
 
